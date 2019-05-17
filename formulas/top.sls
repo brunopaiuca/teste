@@ -1,3 +1,3 @@
-*:
+consul:
   'consul-*':
     - consul

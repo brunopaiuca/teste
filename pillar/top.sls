@@ -1,0 +1,3 @@
+prd:
+  'consul-*':
+    - consul

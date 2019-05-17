@@ -1,0 +1,11 @@
+[Unit]
+Description=Consul Startup process
+After=network.target
+ 
+[Service]
+Type=simple
+ExecStart=/bin/bash -c '/usr/local/bin/consul agent -config-dir /etc/consul.d/ -retry-join "provider=aws region=us-east-1 addr_type=private_v4 tag_key=Name tag_value={{ pillar['stack_name'] }}"'
+TimeoutStartSec=0
+ 
+[Install]
+WantedBy=default.target

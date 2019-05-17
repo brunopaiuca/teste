@@ -1,3 +1,3 @@
-hmg-consul:
+__env__:
   'consul-*':
     - consul

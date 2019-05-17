@@ -1,3 +1,3 @@
-prd:
+hmg-consul:
   'consul-*':
     - consul

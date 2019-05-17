@@ -1,3 +1,3 @@
-prd:
+consul:
   'consul-*':
     - consul
